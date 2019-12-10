@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cryptodev.cryptopedia">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_aplikasii"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_aplikasii"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".chatroom"
+            ></activity>
+        <activity
+            android:name=".testActivity"
+            android:label="@string/title_activity_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FirstLayout"
+            android:theme="@style/status_bar_login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/status_bar_login" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/status_bar_login" />
+
+    </application>
+
+</manifest>
